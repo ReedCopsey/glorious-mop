@@ -71,21 +71,22 @@ let Run(myTimer: TimerInfo, log: TraceWriter) =
 
     let message =
         [ 
-            "FSharpVancouver"
-            "sfsharp" 
             "Austin-F-Meetup"
-            "FSharp-Toronto"
+            "Cambridge-F-Community"
             "DC-fsharp"
             "FSharp-Bogota"
-            "FSharp-Quito"
-            "Cambridge-F-Community"
-            "Functional-Programming-in-F"
-            "FSharping"
-            "fsharp_tokyo"
-            "fsharpsydney"
-            "Portland-F-Meetup-Group"
-            "fsharpbh"
             "FSharp-DRCongo"
+            "FSharp-Quito"
+            "fsharp_tokyo"
+            "FSharp-Toronto"
+            "fsharpbh"
+            "FSharping"
+            "FSharpLondon"
+            "fsharpsydney"
+            "FSharpVancouver"
+            "Functional-Programming-in-F"
+            "Portland-F-Meetup-Group"
+            "sfsharp" 
         ]
         |> List.collect (eventsFor >> Seq.toList)
         |> List.sortBy (fun m -> m.Time)
